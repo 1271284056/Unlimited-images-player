@@ -68,27 +68,21 @@ static NSString *const loopViewCellId = @"LoopViewCellId";
 
 #pragma mark - UICollectionViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    
     // 1. 获取当前停止的页面
     NSInteger offset = scrollView.contentOffset.x / scrollView.bounds.size.width;
-    
-    
     // 2. 第0页，调转到，第1组的第0页
     // 最后一页，跳转到第0组的最后一页
     if (offset == 0 || offset == ([self numberOfItemsInSection:0] - 1)) {
 //        NSLog(@"%zd", offset);
-        
         // 第 0 页
         if (offset == 0) {
             offset = _urls.count;
         } else {
             offset = _urls.count - 1;
         }
-        
         // 重新调整 contentOffset
         scrollView.contentOffset = CGPointMake(offset * scrollView.bounds.size.width, 0);
     }
-    
 }
 
 @end
