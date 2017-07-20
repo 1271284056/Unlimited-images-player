@@ -1,6 +1,7 @@
 //
 //  AppDelegate.m
 //  无限图片轮播器
+//
 //  Created by 张江东 on 16/10/25.
 //  Copyright © 2016年 58kuaipai. All rights reserved.
 //
@@ -20,7 +21,7 @@
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    // dev    Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
 
