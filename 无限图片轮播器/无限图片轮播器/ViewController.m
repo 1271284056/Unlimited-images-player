@@ -23,7 +23,7 @@
     [self loadData];
     
     NSLog(@"%@", _urls);
-    
+    // test
     // 创建 界面
     LoopView *loopView = [[LoopView alloc] initWithURLs:_urls];
     loopView.frame = CGRectMake(20, 20, self.view.bounds.size.width - 40, 400);
